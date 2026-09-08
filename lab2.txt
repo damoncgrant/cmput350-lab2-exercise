@@ -1,2 +1,13 @@
 Answer written questions 1 and 2 here.
 
+1. 
+SFML uses a top-left origin coordinate system meaning (0, 0) is in the upper left of the screen.
+This is different than what I would normally expect since I am used to bottom-left coordinates from
+various math classes which I have taken. This affects angle calculation since a positive angle means
+a clockwise rotation rather than the expected counter-clockwise rotation.
+
+2.
+Games follow a standard loop of handling inputs -> updating the state -> rendering the results, 
+according to the lab prep. This keeps things predictable and everything is deterministic. If
+we were to update the state directly after an input when not all inputs are done being handled
+there could be weird bugs that arise as well as performance issues.
